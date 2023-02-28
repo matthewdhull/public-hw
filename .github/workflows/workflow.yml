@@ -1,0 +1,16 @@
+name: Zip Files
+
+on:
+  push:
+    branches:
+      - publish-hw
+
+jobs:
+  zip-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: vimtor/action-zip@v1
+        with:
+          files: hw1/template/ hw2/template/
+          dest: hw_skeleton.zip
