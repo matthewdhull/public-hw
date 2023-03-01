@@ -12,9 +12,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: vimtor/action-zip@v1
         with:
-          files: hw1/template/ hw2/template/
-          dest: hw_skeleton.zip
+          files: /*
+          dest: hw-skeleton.zip
       - uses: actions/upload-artifact@v1
         with:
-          name: my-artifact
-          path: ${{ github.workspace }}/hw_skeleton.zip
+          name: hw-skeleton
+          path: ${{ github.workspace }}/hw-skeleton.zip
