@@ -14,3 +14,7 @@ jobs:
         with:
           files: hw1/template/ hw2/template/
           dest: hw_skeleton.zip
+- uses: actions/upload-artifact@v1
+  with:
+    name: my-artifact
+    path: ${{ github.workspace }}/hw_skeleton.zip
