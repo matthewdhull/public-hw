@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: vimtor/action-zip@v1
         with:
-          files: /*
+          files: hw1/ hw2/
           dest: hw-skeleton.zip
       - uses: actions/upload-artifact@v1
         with:
